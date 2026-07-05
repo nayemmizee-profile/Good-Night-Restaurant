@@ -1,8 +1,22 @@
+/* *{
+    background-color: cadetblue;
+} */
+body {
+    background-color: darkcyan;
+}
+
+/* body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+ } */
+
 header {
     display: flex;
     height: 100px;
     width: auto;
-    background-color: green;
+    background-color: cadetblue;
     margin: 0px;
     padding: 0px 100px 0px 20px;
     align-items: center;
@@ -15,16 +29,18 @@ header div.logo-name {
     /* flex: 1px; */
     justify-content: center;
     color: wheat;
-    height: fit-content;
-    width: fit-content;
+    /* height: fit-content;
+    width: fit-content; */
     text-align: left;
-    font-size: 1.6rem;
+    font-size: clamp(0rem, 2vw, 1.6rem)
 }
 
 header nav ul li a {
     /* display: flex; */
     text-align: left;
-    font-size: 1.3rem;
+    /* white-space: nowrap; */
+    /* flex-wrap: nowrap; */
+    font-size: clamp(0.1rem, 2vw, 1.5rem);
 
 }
 
@@ -34,7 +50,9 @@ header ul.navigation {
     list-style: none;
     justify-content: right;
     text-align: right;
-    gap: 30px;
+    gap: clamp(10px, 3vw, 300px);
+    /* flex-wrap: nowrap; */
+    white-space: nowrap;
 
 
 
@@ -53,10 +71,81 @@ header a {
 header a:hover {
     /* background-color: skyblue; */
     /* color: white; */
-    text-decoration: underline ;
+    text-decoration: underline;
 }
 
 header a:visited {
     /* background-color: rgb(98, 92, 82); */
     /* color: rgb(251, 248, 248); */
+}
+
+
+/* End Of Header  */
+/* End Of Header  */
+/* End Of Header  */
+/* End Of Header  */
+/* End Of Header  */
+/* End Of Header  */
+
+
+main {
+    margin-top: 1%
+}
+
+.banner {
+    display: flex;
+
+    background-color: rgb(151, 183, 194);
+    border-radius: 20px;
+    padding: clamp(10px, 1vw, 30px);
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0px; */
+
+}
+
+div.hero-section {
+    flex: 1;
+    padding: clamp(5px, 0vw, 20px);
+    text-align: justify;
+    border: 10px;
+    padding: 0px 40px 0px 0px;
+}
+
+main section div h2 {
+    font-size: 3rem;
+    color: green;
+    font-size: clamp(1rem, 3vw, 2.4rem);
+    text-align: left;
+    margin: 0px;
+    /* margin-bottom: clamp(1px, 4vw, 150px); */
+
+}
+main section div h2{
+    margin-bottom: clamp(1px, 4vw, 150px);
+}
+main section div button{
+    margin-top: 20px;
+}
+
+
+main section div button {
+    background-color: blueviolet;
+    padding: clamp(0px, 1vw, 10px);
+    border-radius: 15px;
+}
+
+main section div button:hover {
+    background-color: rgb(171, 140, 166);
+    cursor: pointer;
+}
+
+.hero-img img {
+    width: 100%;
+    flex: 1;
+    img
+}
+
+.hero-img {
+    flex: 1;
 }

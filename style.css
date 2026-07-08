@@ -1,46 +1,54 @@
-/* *{
-    background-color: cadetblue;
-} */
-body {
-    background-color: darkcyan;
+* {
+    margin: 0 ;
+    margin-top: 2px;
+
 }
 
-/* body{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
- } */
-
+body {
+    background-color: #DBE4C9;
+    
+}
 header {
     display: flex;
-    height: 100px;
+    height: 80px;
     width: auto;
-    background-color: cadetblue;
-    margin: 0px;
-    padding: 0px 100px 0px 20px;
+    background-color: #8AA624;
+    
+    padding: 0px 90px 0px 20px;
     align-items: center;
     justify-content: space-between;
     border-radius: 20px;
+
+
 }
+
 
 header div.logo-name {
     display: flex;
-    /* flex: 1px; */
+
     justify-content: center;
-    color: wheat;
+    color: rgb(67, 46, 8);
     /* height: fit-content;
     width: fit-content; */
     text-align: left;
-    font-size: clamp(0rem, 2vw, 1.6rem)
+    font-size: clamp(0rem, 2vw, 1.4rem);
+
+}
+
+header div.logo-name span{
+    font-size: clamp(0.6rem, 2vw, 1rem);
+}
+
+header div.logo-name:hover {
+    color: rgb(100, 79, 41);
 }
 
 header nav ul li a {
     /* display: flex; */
-    text-align: left;
+    /* text-align: left; */
     /* white-space: nowrap; */
     /* flex-wrap: nowrap; */
-    font-size: clamp(0.1rem, 2vw, 1.5rem);
+    font-size: clamp(0.1rem, 2vw, 1rem);
 
 }
 
@@ -48,35 +56,46 @@ header ul.navigation {
     display: flex;
     /* flex: 3px; */
     list-style: none;
-    justify-content: right;
-    text-align: right;
-    gap: clamp(10px, 3vw, 300px);
+    /* justify-content: left;
+    text-align: left; */
+    gap: clamp(0px, 2vw, 12px);
     /* flex-wrap: nowrap; */
     white-space: nowrap;
 
+}
 
+header ul.navigation {
+    border: 10px;
+    /* border-color: blue; */
+    background-color: #a0bc39;
+    border-radius: 35px;
+    padding: 12px 15px;
+}
 
+header ul.navigation:hover {
+    background-color: #5f6e29;
 }
 
 header a {
     text-decoration: none;
     /* background-color: white; */
-    color: rgb(255, 255, 255);
-    /* padding: 6px 12px;
+    color: rgb(249, 246, 246);
+   
     border-radius: 15px;
-    cursor: pointer; */
+    cursor: pointer;
 
 }
 
 header a:hover {
-    /* background-color: skyblue; */
+    background-color: #657d0f;
+    padding: 6px 10px;
     /* color: white; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 /* header a:visited {
     /* background-color: rgb(98, 92, 82); */
-    /* color: rgb(251, 248, 248);
+/* color: rgb(251, 248, 248);
     } */
 
 
@@ -89,66 +108,101 @@ header a:hover {
 /* End Of Header  */
 
 
-main {
-    margin-top: 1%
-}
+/* main {
+    margin-top: 5px
+} */
 
 .banner {
     display: flex;
-
-    background-color: rgb(151, 183, 194);
+    background-color: #FEA405;
+    box-shadow: 4px 3px 10px 10px #ad956c;
     border-radius: 20px;
-    padding: clamp(10px, 1vw, 30px);
+    padding: clamp(10px, 10vw, 30px);
     justify-content: space-around;
     align-items: center;
-    /* margin: 0px; */
+    margin: 15px 80px;
 
-}
+} 
+
+
 
 div.hero-section {
     flex: 1;
+    /* font-size: 3rem; */
     padding: clamp(5px, 0vw, 20px);
     text-align: justify;
     border: 10px;
     padding: 0px 40px 0px 0px;
+     /* margin-bottom: clamp(1px, 4vw, 150px); */
 }
-
 main section div h2 {
-    font-size: 3rem;
-    color: green;
-    font-size: clamp(1rem, 3vw, 2.4rem);
+    
+    color: rgb(59, 61, 118);
+    font-size: clamp(1rem, 4vw, 2.4rem);
     text-align: left;
     margin: 0px;
-    /* margin-bottom: clamp(1px, 4vw, 150px); */
-
+    
 }
+
+
+
 
 main section div h2 {
     margin-bottom: clamp(1px, 4vw, 150px);
 }
 
+main section div p.hero-section-paragraph{
+    font-size: clamp(0.7rem, 4vw, 1.3rem);
+}
+
 main section div button {
-    margin-top: 20px;
+    margin-top: 60px;
+    
 }
 
 
-main section div button {
-    background-color: blueviolet;
-    padding: clamp(0px, 1vw, 10px);
-    border-radius: 15px;
-}
+ main section div button {
+    font-size: clamp(0.1rem, 2vw, 0.9rem);
+    background-color: #ffc35c;
+    padding: clamp(0px, 4vw, 15px);
+    border-radius: 30px;
+    border: none;
+ } 
 
 main section div button:hover {
-    background-color: rgb(171, 140, 166);
+    background-color: #b57301;
     cursor: pointer;
 }
 
 .hero-img img {
     width: 100%;
     flex: 1;
-    
+
 }
 
 .hero-img {
     flex: 1;
+    box-shadow: 3px 3px 50px 5px rgb(15, 15, 15);
+}
+
+/* banner-end */
+/* banner-end */
+/* banner-end */
+/* banner-end */
+/* banner-end */
+/* banner-end */
+
+
+section img{
+    width: 16%;
+}
+
+.menu-showcage-01{
+    display: grid;
+    grid-template-columns: 25px, 1fr;
+}
+
+.menu-showcage-02{
+     display: grid;
+    grid-template-columns: 25px, 1fr;
 }

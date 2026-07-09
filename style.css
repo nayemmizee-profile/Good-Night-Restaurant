@@ -30,14 +30,13 @@ header div.logo-name {
     color: rgb(67, 46, 8);
     /* height: fit-content;
     width: fit-content; */
-    text-align: left;
-    font-size: clamp(0rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    text-align:  end;
+    line-height: 10px;
 
 }
 
-header div.logo-name span{
-    font-size: clamp(0.6rem, 2vw, 1rem);
-}
+
 
 header div.logo-name:hover {
     color: rgb(100, 79, 41);
@@ -135,7 +134,7 @@ div.hero-section {
     padding: 0px 40px 0px 0px;
      /* margin-bottom: clamp(1px, 4vw, 150px); */
 }
-main section div h2 {
+section div h2 {
     
     color: rgb(59, 61, 118);
     font-size: clamp(1rem, 4vw, 2.4rem);
@@ -145,23 +144,21 @@ main section div h2 {
 }
 
 
-
-
-main section div h2 {
+section div h2 {
     margin-bottom: clamp(1px, 4vw, 150px);
 }
 
-main section div p.hero-section-paragraph{
+section div p.hero-section-paragraph{
     font-size: clamp(0.7rem, 4vw, 1.3rem);
 }
 
-main section div button {
+section div button {
     margin-top: 60px;
     
 }
 
 
- main section div button {
+ section div button {
     font-size: clamp(0.1rem, 2vw, 0.9rem);
     background-color: #ffc35c;
     padding: clamp(0px, 4vw, 15px);
@@ -169,20 +166,24 @@ main section div button {
     border: none;
  } 
 
-main section div button:hover {
+section div button:hover {
     background-color: #b57301;
     cursor: pointer;
 }
 
 .hero-img img {
     width: 100%;
-    flex: 1;
+    /* flex: 1; */
+    border-radius: 15px;
+    
 
 }
 
 .hero-img {
     flex: 1;
-    box-shadow: 3px 3px 50px 5px rgb(15, 15, 15);
+    box-shadow: 3px 5px 50px 0px rgb(15, 15, 15);
+    border-radius: 15px;
+
 }
 
 /* banner-end */
@@ -193,16 +194,48 @@ main section div button:hover {
 /* banner-end */
 
 
-section img{
-    width: 16%;
+.grid{
+     display:grid;
+      gap:10px;
+       border: 2px;
+       padding: 15px 15px;
+       border-radius: 15px;
+       grid-template-columns:repeat(4,1fr);
+    background-color: #DBE4C9;
+    border: 1px solid #867352;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50%;
 }
 
-.menu-showcage-01{
-    display: grid;
-    grid-template-columns: 25px, 1fr;
+.food-menu{
+    display:grid;
+    background-color: #ffc35c;
+    border: 2px;
+    /*  */
+    gap:30px;
+    padding: 50px 50px;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.menu-showcage-02{
-     display: grid;
-    grid-template-columns: 25px, 1fr;
+
+
+/* .card{
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+   
+
+
+
+.card img{
+    width:100%;
+    border-radius: 15px;
+    /* object-fit:cover; */
+    
 }
